@@ -1,0 +1,73 @@
+.mars-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: rgb(39, 70, 181); */
+}
+
+.filter-main{
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: rgb(48,52,52); */
+    padding: 0.5rem;
+}
+
+.filter-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.filter-btn i{
+    color: antiquewhite;
+    scale: 1.5;
+}
+
+.filter-btn i:hover{
+    transform: scale(1.5);
+}
+
+@media only screen and (max-width: 768px) {
+    .filter-main{
+        justify-content: center;
+    }
+    .filter-container{
+        justify-content: center;
+    }
+    .filter-btn {
+      margin: 20px;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+    .filter-btn {
+      margin: 20px;
+    }
+  }
+
+.card-container{
+    margin: 0.5rem;
+}
+
+.loadingState{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  .loadingState i{
+    opacity: 1;
+    font-size: 4rem;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }

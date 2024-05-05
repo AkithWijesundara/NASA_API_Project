@@ -1,0 +1,12 @@
+.signup-container{
+    background: url('../assets/landingPageBackground.jpg') center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.sigup-form{
+    display: grid;
+    place-items: center;
+}
