@@ -29,7 +29,7 @@ export default function SignIn() {
       password: data.get('password'),
     }
     await axios
-    .post("http://localhost:8070/user/login",userData)
+    .post("https://nasaapiproject-production.up.railway.app/user/login",userData)
     .then((res)=>{
       //stores token in the local storage
       window.localStorage.setItem("token", res.data.accessToken);

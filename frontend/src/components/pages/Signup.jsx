@@ -27,7 +27,7 @@ export default function SignUp() {
       password: data.get('password'),
     }
     await axios
-    .post("http://localhost:8070/user/signup",userData)
+    .post("https://nasaapiproject-production.up.railway.app/user/signup",userData)
     .then((res)=>{
       alert("Sign Up Successfull");
       window.location.href = '/Signin';
