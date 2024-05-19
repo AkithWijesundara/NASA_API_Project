@@ -17,7 +17,7 @@ export default function APOD() {
     }
     async function fetchAPIData() {
       const KEY = "0KWxFf3Pd5uEI2v9GmTcgzPikliIBnlKwjVfezeY";
-      const url = "https://api.nasa.gov/planetary/apod" + `?api_key=${KEY}`
+      const url = "https://api.nasa.gov/planetary/apod" + `?api_key=${KEY}&thumbs=${true}`
       try{
         const res = await fetch(url);
         const localData = await res.json()
