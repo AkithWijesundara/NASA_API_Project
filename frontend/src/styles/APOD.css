@@ -19,6 +19,11 @@ body{
   animation: spin 1.5s linear infinite;
 }
 
+iframe{
+  min-width: 100%;
+  min-height: 100%;
+}
+
 @keyframes spin {
   from{
     transform: rotate(0deg);
